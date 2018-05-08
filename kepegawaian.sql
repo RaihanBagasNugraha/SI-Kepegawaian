@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 06, 2018 at 08:27 AM
+-- Generation Time: May 08, 2018 at 04:16 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -42,7 +42,9 @@ CREATE TABLE `pegawai` (
 
 INSERT INTO `pegawai` (`nomor`, `nama`, `nip`, `tgl_lahir`, `divisi`) VALUES
 (7, 'Raihan Bagas Nugraha', '1617051088', '28 Agustus 1998', 'Ilkom'),
-(9, 'Faiz Febriansyah', '1617051093', '1 Januari 2000', 'Ilmu Komputer');
+(9, 'Faiz Febriansyah', '1617051093', '1 Januari 2000', 'Ilmu Komputer'),
+(10, 'Faiz', '18284721', '20 april ', 'ilkom'),
+(12, 'Z', '282123d', '10 Agustus', 'acak');
 
 -- --------------------------------------------------------
 
@@ -70,7 +72,9 @@ INSERT INTO `user` (`username`, `password`) VALUES
 -- Indexes for table `pegawai`
 --
 ALTER TABLE `pegawai`
-  ADD PRIMARY KEY (`nomor`);
+  ADD PRIMARY KEY (`nip`),
+  ADD UNIQUE KEY `nomor` (`nomor`),
+  ADD KEY `nip` (`nip`) USING BTREE;
 
 --
 -- Indexes for table `user`
@@ -86,7 +90,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `pegawai`
 --
 ALTER TABLE `pegawai`
-  MODIFY `nomor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `nomor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
