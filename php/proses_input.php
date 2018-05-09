@@ -9,6 +9,6 @@ if($input){
 header("location:pegawai.php");
 }
 else{
-header("location:tambah_data.php");
+header("location:check.php");
 }
 ?>
