@@ -1,17 +1,19 @@
 form {
   background: #FFB300;
   width: 300px;
-  padding: 50px 50px;
+  padding: 30px 30px;
   margin: 50px auto;
   border-radius: 5px;
 }
 h1 {
   text-align: center;
+  margin-top: 100px;
 }
 h2 {
   text-align: center;
 }
 input{
+  text-align: center;
   display: block;
   width: 100%;
   padding: 20px 20px;
@@ -20,4 +22,43 @@ input{
 }
 .submit{
   cursor: pointer;
+}
+.category{
+  width: 300px;
+  height: 300px;
+  border:2px solid #000;
+  padding: 10px;
+  background: red;
+  color:white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.tambah{
+  font-size: 20px;
+  width: 250px;
+  padding: 20px 15px;
+  margin: 100px auto;
+  margin-left: 400px;
+  border-radius: 5px;
+  background: #FFB300;
+}
+.edit{
+  font-size: 20px;
+  width: 200px;
+  padding: 20px 15px;
+  margin: 50px auto;
+  border-radius: 5px;
+  background: #FFB300;
+}
+.out{
+  font-size: 20px;
+  width: 200px;
+  padding: 20px 15px;
+  margin: 50px auto;
+  border-radius: 5px;
+  background: #FFB300;
+}
+button{
+  margin-left: 300px;
 }
