@@ -2,16 +2,19 @@
 include "koneksi.php";
 ?>
 <html>
+<title>Data Pegawai</title>
 <body>
+<link rel="stylesheet" href="style2.css">
 <!--<p>Form Search</p> -->
-<form action="pegawai.php" method="get">
+<form action="pegawai.php" method="get" class="cari">
 	<label>Cari :</label>
 	<input type="text" name="cari">
 	<input type="submit" value="Cari">
 	
+	
 </form>
 
-<form action="pegawai.php" method="post">   
+<form action="pegawai.php" method="post" class="sort">   
  <select name="sort">  
  <option value="nomor">Sort By</option>  
  <option value="nama">Nama</option>  
@@ -20,7 +23,6 @@ include "koneksi.php";
  </select>   
  <input type="submit" name="enter" value="Enter">   
 </form> 
-
 <!--<p>Table Pegawai</p> -->
 <table border = "1">
 	<tr>
@@ -40,7 +42,6 @@ include "koneksi.php";
 	else if (isset($_POST['sort']))
 	{
     $sort = $_POST['sort'];
-	echo "Ordered By ".$sort."";
 		$query = mysqli_query($koneksi,"select * from pegawai order by ".$sort."");
 	}
 	else{
@@ -55,14 +56,15 @@ include "koneksi.php";
 	 <td><?php echo $data['nip']?></td>
 	 <td><?php echo $data['tgl_lahir']?></td>
 	 <td><?php echo $data['divisi']?></td>
-	 <td><a href="edit.php?nomor=<?php echo $data['nomor'];?>">Edit</a></td>
-	 <td><a href="delete.php?nomor=<?php echo $data['nomor'];?>">Delete</a></td>
+	 <th><a href="edit.php?nomor=<?php echo $data['nomor'];?>">Edit</a></td>
+	 <th><a href="delete.php?nomor=<?php echo $data['nomor'];?>">Delete</a></td>
 	</tr>
 	<?php
 	}
 	?>
 </table>
-	<a href=tambah_data.php>Tambah Data</a>
-	<a href=index.php>Menu</a>
+	<br>
+	<a href="tambah_data.php"><button class="btn">Tambah Data Pegawai</button></a></br>
+	<a href="index.php"><button class="btn">Menu</button></a></br>
 </body>
 </html>
