@@ -7,12 +7,13 @@ if(!isset($_SESSION['username'])){
 ?>
 <!DOCTYPE HTML>
 <html>
-	<body>
-		Welcome
+		<h1>Welcome
+		<link rel="stylesheet" href="style.css">
 		<?php echo $_SESSION['username'];?>
+		</h1>
 		<br>
-		<a href="tambah_data.php">Tambah Data Pegawai</a><br>
-		<a href="pegawai.php">Edit Data Pegawai</a><br>
-		<a href="logout.php">Logout</a>
+		<button type="button" class="tambah"><a href="tambah_data.php">Tambah Data Pegawai</a></button>
+		<button type="button" class="edit"><a href="pegawai.php">Edit Data Pegawai</a></button>
+		<button type="button" class="out"><a href="logout.php">Logout</a></button>
 	</body>
 </html>
