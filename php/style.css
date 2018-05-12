@@ -1,0 +1,23 @@
+form {
+  background: #FFB300;
+  width: 300px;
+  padding: 50px 50px;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+input{
+  display: block;
+  width: 100%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.submit{
+  cursor: pointer;
+}
