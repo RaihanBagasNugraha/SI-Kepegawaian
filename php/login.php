@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<title>LOGIN sistem Kepegawaian</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
