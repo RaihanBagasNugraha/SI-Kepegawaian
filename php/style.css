@@ -4,12 +4,17 @@ form {
   padding: 30px 30px;
   margin: 50px auto;
   border-radius: 5px;
+  margin-bottom:5px;
 }
 h1 {
+  font-family: helvetica;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-bottom: -50px;
 }
 h2 {
+  font-family: helvetica;
   text-align: center;
 }
 input{
@@ -39,26 +44,42 @@ input{
   width: 250px;
   padding: 20px 15px;
   margin: 100px auto;
-  margin-left: 400px;
+  margin-left: 550px;
+  margin-bottom: -100px;
   border-radius: 5px;
   background: #FFB300;
 }
 .edit{
   font-size: 20px;
-  width: 200px;
+  width: 250px;
   padding: 20px 15px;
   margin: 50px auto;
+  margin-left: 550px;
+  margin-bottom: -100px;
   border-radius: 5px;
   background: #FFB300;
 }
 .out{
   font-size: 20px;
-  width: 200px;
+  width: 250px;
   padding: 20px 15px;
   margin: 50px auto;
+  margin-left: 550px;
   border-radius: 5px;
   background: #FFB300;
 }
+
 button{
   margin-left: 300px;
+}
+
+.menu{
+  display: block;
+  font-size: 20px;
+  margin-top:5px;
+  background: #f2f2f2;
+  width: 300px;
+  padding: 30px 30px;
+  margin: 50px auto;
+  border-radius: 5px;
 }
