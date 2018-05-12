@@ -41,9 +41,12 @@ CREATE TABLE `pegawai` (
 --
 
 INSERT INTO `pegawai` (`nomor`, `nama`, `nip`, `tgl_lahir`, `divisi`) VALUES
+(1, 'Sintiya Paramitha', '1617051039', '1 April 1998', 'Sekertaris'),
+(3, 'Amar', '1617052009', '5 maret 1997', 'Dokumentasi'),
+(5, 'Marpuah', ' 1617051293', '12 mei 1996', ' Kreatif'),
 (7, 'Raihan Bagas Nugraha', '1617051088', '28 Agustus 1998', 'Ilkom'),
 (9, 'Faiz Febriansyah', '1617051093', '1 Januari 2000', 'Ilmu Komputer'),
-(10, 'Faiz', '18284721', '20 april ', 'ilkom'),
+(10, 'ilham', '1617051060', '20 april 2000', 'ilkom'),
 (12, 'Z', '282123d', '10 Agustus', 'acak');
 
 -- --------------------------------------------------------
