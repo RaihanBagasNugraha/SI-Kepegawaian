@@ -2,11 +2,48 @@
 include "koneksi.php";
 ?>
 <html>
-<title>Data Pegawai</title>
-<body>
+<head>
 <link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="style2.css">
+<style type="text/css">
+	#header{
+	width:100%;
+	height:75px;
+	background:#FFB300;
+	}
+	.title{
+	color:white; 
+	font-family:helvetica;
+	font-weight:bold; 
+	text-decoration:none; 
+	font-size:30px; 
+	line-height:60px; 
+	padding:20px;
+	}
+	body {
+			background: url('office2.jpg');
+			color: #fff;
+			background-size: 1200px 720px;
+	}
+	th{
+		color:black;
+	}
+	td{
+		color:black;
+	}
+	tr{
+		color:black;
+	}
+</style>
+<title>Data Pegawai</title>
+</head>
+<body>
+<div id="header">
+	<a href="" class="title">Data Pegawai Ars Corporation</a>
+</div>
+
 <!--<p>Form Search</p> -->
-<form action="pegawai.php" method="get" class="cari">
+<form action="main.php" method="get" class="cari">
 	<label>Cari :</label>
 	<input type="text" name="cari">
 	<input type="submit" value="Cari">
@@ -14,7 +51,7 @@ include "koneksi.php";
 	
 </form>
 
-<form action="pegawai.php" method="post" class="sort2">   
+<form action="main.php" method="post" class="sort2">   
  <select name="sort">  
  <option value="nomor">Sort By</option>  
  <option value="nama">Nama</option>  
