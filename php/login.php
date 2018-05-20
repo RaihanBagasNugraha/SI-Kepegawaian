@@ -12,6 +12,19 @@
 		h1{
 			color:black;
 		}
+		h2 {
+  font-family: helvetica;
+  text-align: center;
+}
+input{
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
 		</style>
 	</head>
 	<body>
