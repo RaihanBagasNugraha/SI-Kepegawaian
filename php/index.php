@@ -8,6 +8,7 @@ if(!isset($_SESSION['username'])){
 <!DOCTYPE HTML>
 <html>
 <head>
+<link rel="stylesheet" href="style.css">
 <style type="text/css">
 		body {
 			background: url('office.jpg');
@@ -18,11 +19,40 @@ if(!isset($_SESSION['username'])){
 			color:black;
 		}
 		h2{
-			color:white;
+			color:black;
 		}
+		.tambah{
+  font-size: 20px;
+  width: 250px;
+  padding: 20px 15px;
+  margin: 100px auto;
+  margin-left: 550px;
+  margin-bottom: -100px;
+  border-radius: 5px;
+  background: #FFB300;
+}
+.edit{
+  font-size: 20px;
+  width: 250px;
+  padding: 20px 15px;
+  margin: 50px auto;
+  margin-left: 550px;
+  margin-bottom: -100px;
+  border-radius: 5px;
+  background: #FFB300;
+}
+.out{
+  font-size: 20px;
+  width: 250px;
+  padding: 20px 15px;
+  margin: 50px auto;
+  margin-left: 550px;
+  border-radius: 5px;
+  background: #FFB300;
+}
 </style>
 <title>Index</title>
-<link rel="stylesheet" href="style.css">
+
 </head>
 	<body>
 		<h1>Welcome Admin</h1>
