@@ -13,6 +13,24 @@
 		h2{
 			color:white;
 		}
+		input{
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.menu{
+  display: block;
+  font-size: 20px;
+  margin-top:5px;
+  background: #f2f2f2;
+  width: 300px;
+  padding: 30px 30px;
+  margin: 50px auto;
+  border-radius: 5px;
+}
 </style>
 	<title>Tambah Data</title>
 	<link rel="stylesheet" href="style.css">
